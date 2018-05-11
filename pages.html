@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>分页</title>
+		<style type="text/css">
+			.page{
+				text-align: center;
+			}
+			.page li{
+				display: inline-block;
+			}
+			.page li a{
+				display: inline-block;
+				font-size: 14px;
+				line-height: 1;
+				padding: 8px 10px;
+				margin: 0 3px;
+				border: 1px solid #ccc;
+				border-radius: 4px;
+				cursor: pointer;
+			}
+			.page li a[disabled]{
+				color: #ccc;
+				cursor: not-allowed;
+			}
+			.page li a.active{
+				color: #0cb1fe;
+				border-color:#0cb1fe;
+			}
+			.page li a.ellipsis{
+				cursor: auto;
+			}
+		</style>
+	</head>
+	<body>
+		<ul id="J_page" class="page"></ul>
+	</body>
+	<script src="js/page.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		var pages = {
+			pageSize:1,
+			count:9
+		};
+		var myPage = new Page({
+			el:'#J_page',
+			pages:pages,
+			jump:function(page){
+//				分页跳转触发函数
+				console.log(page)
+			}
+		});
+	</script>
+</html>
