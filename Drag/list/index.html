@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>列表拖拽</title>
+		<style type="text/css">
+			.list{
+				width: 400px;
+			}
+			.list li{
+				padding: 10px;
+				border-bottom: 1px solid #ccc;
+			}
+		</style>
+	</head>
+	<body>
+		<ul class="list" id="J_item">
+			<li>todo list 001 : Accessibility issue</li>
+			<li>todo list 002 : Transition animations</li>
+			<li>todo list 003 : not supported in</li>
+			<li>todo list 004 : Internet Explorer 8 & 9</li>
+			<li>todo list 005 : Initial active</li>
+			<li>todo list 006 : element required</li>
+			<li>todo list 007 : Glyphicon icons</li>
+			<li>todo list 008 : not necessary</li>
+			<li>todo list 009 : Optional captions</li>
+		</ul>
+	</body>
+	<script src="listDrag.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		var drag = new Drag({
+			el:'#J_item'
+		})
+	</script>
+</html>
