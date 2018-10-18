@@ -1,0 +1,62 @@
+'videoList': {
+    '001': [
+      {
+        channel: '1',
+        urlHD: 'http://hls.open.ys7.com/openlive/7e5ec3d6aa5e425bb370c0617899cd60.hd.m3u8',
+        url: 'http://hls.open.ys7.com/openlive/7e5ec3d6aa5e425bb370c0617899cd60.m3u8',
+        urlRTMPHD: 'rtmp://rtmp.open.ys7.com/openlive/7e5ec3d6aa5e425bb370c0617899cd60.hd',
+        urlRTMP: 'rtmp://rtmp.open.ys7.com/openlive/7e5ec3d6aa5e425bb370c0617899cd60',
+        img: require('@/assets/video/xiandu.png')
+      },
+      {
+        channel: '2',
+        urlHD: 'http://hls.open.ys7.com/openlive/36e2910dfdd142da83a37c1ee4650d04.hd.m3u8',
+        url: 'http://hls.open.ys7.com/openlive/36e2910dfdd142da83a37c1ee4650d04.m3u8',
+        urlRTMPHD: 'rtmp://rtmp.open.ys7.com/openlive/36e2910dfdd142da83a37c1ee4650d04.hd',
+        urlRTMP: 'rtmp://rtmp.open.ys7.com/openlive/36e2910dfdd142da83a37c1ee4650d04',
+        img: require('@/assets/video/xiandu.png')
+      },
+      {
+        channel: '3',
+        urlHD: 'http://hls.open.ys7.com/openlive/cafe8f9c65bb417288580c5d60e891ad.hd.m3u8',
+        url: 'http://hls.open.ys7.com/openlive/cafe8f9c65bb417288580c5d60e891ad.m3u8',
+        urlRTMPHD: 'rtmp://rtmp.open.ys7.com/openlive/cafe8f9c65bb417288580c5d60e891ad.hd',
+        urlRTMP: 'rtmp://rtmp.open.ys7.com/openlive/cafe8f9c65bb417288580c5d60e891ad',
+        img: require('@/assets/video/xiandu.png')
+      },
+      {
+        channel: '4',
+        urlHD: 'http://hls.open.ys7.com/openlive/93f4a51efeef434db9cf4547a048a558.hd.m3u8',
+        url: 'http://hls.open.ys7.com/openlive/93f4a51efeef434db9cf4547a048a558.m3u8',
+        urlRTMPHD: 'rtmp://rtmp.open.ys7.com/openlive/93f4a51efeef434db9cf4547a048a558.hd',
+        urlRTMP: 'rtmp://rtmp.open.ys7.com/openlive/93f4a51efeef434db9cf4547a048a558',
+        img: require('@/assets/video/xiandu.png')
+      }
+    ],
+    '002': [
+      {
+        channel: '1',
+        urlHD: 'http://hls.open.ys7.com/openlive/9e1d99adb8eb4087a701a3a5de9a51fc.hd.m3u8',
+        url: 'http://hls.open.ys7.com/openlive/9e1d99adb8eb4087a701a3a5de9a51fc.m3u8',
+        urlRTMPHD: 'rtmp://rtmp.open.ys7.com/openlive/9e1d99adb8eb4087a701a3a5de9a51fc.hd',
+        urlRTMP: 'rtmp://rtmp.open.ys7.com/openlive/9e1d99adb8eb4087a701a3a5de9a51fc',
+        img: require('@/assets/video/huanglong.png')
+      },
+      {
+        channel: '2',
+        urlHD: 'http://hls.open.ys7.com/openlive/f1cadec1764149baa4694d8c88a6bf91.hd.m3u8',
+        url: 'http://hls.open.ys7.com/openlive/f1cadec1764149baa4694d8c88a6bf91.m3u8',
+        urlRTMPHD: 'rtmp://rtmp.open.ys7.com/openlive/f1cadec1764149baa4694d8c88a6bf91.hd',
+        urlRTMP: 'rtmp://rtmp.open.ys7.com/openlive/f1cadec1764149baa4694d8c88a6bf91',
+        img: require('@/assets/video/huanglong.png')
+      },
+      {
+        channel: '3',
+        urlHD: 'http://hls.open.ys7.com/openlive/26c53a6bea6d40028761f21aaa887e5d.hd.m3u8',
+        url: 'http://hls.open.ys7.com/openlive/26c53a6bea6d40028761f21aaa887e5d.m3u8',
+        urlRTMPHD: 'rtmp://rtmp.open.ys7.com/openlive/26c53a6bea6d40028761f21aaa887e5d.hd',
+        urlRTMP: 'rtmp://rtmp.open.ys7.com/openlive/26c53a6bea6d40028761f21aaa887e5d',
+        img: require('@/assets/video/huanglong.png')
+      }
+    ]
+}
