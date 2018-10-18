@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="calendar.css">
+		<style>
+			.date{
+				margin: 100px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="date" id="J_date"></div>
+	</body>
+	<script src="calendar.js" type="text/javascript" charset="utf-8"></script>
+	<script>
+		(function(){
+			let myCanlen = new Calendar({
+				el: '#J_date', // 和日历关联的input
+				date: '2018-08-01', // 高亮的日期，不传即定位到今日 
+//				separator:'/', //分割符
+				clickDate:function(dateObj){ //点击日期的回调事件
+					console.log(dateObj)
+				}
+			})
+		})()
+	</script>
+</html>
