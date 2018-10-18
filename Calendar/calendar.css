@@ -1,4 +1,18 @@
+.cn-canlendar-box{
+	position: relative;
+}
+.cn-canlendar-input{
+	height: 32px;
+    padding: 0 8px;
+    font-size: 12px;
+    border: 1px solid #dcdee2;
+    border-radius: 4px;
+    color: #515a6e;
+    background-color: #fff;
+    background-image: none;
+}
 .cn-canlendar-container{
+	position: absolute;
 	width: 218px;
     border: 1px solid #ccc;
     border-radius: 4px;

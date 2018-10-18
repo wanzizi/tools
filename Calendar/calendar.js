@@ -23,8 +23,10 @@ Calendar.prototype = {
     },
     init:function(){
     	this.el.innerHTML = `
-    		<input type="text" id="J_cn_canlandar_input">
-    		<div id="J_cn_canlandar_container" class="cn-canlendar-container" style="display:none"></div>
+    		<div class="cn-canlendar-box">
+				<input class="cn-canlendar-input" type="text" id="J_cn_canlandar_input">
+				<div id="J_cn_canlandar_container" class="cn-canlendar-container" style="display:none"></div>
+    		</div>
 		`
 //  	style="top: ${this.el.offsetTop + this.el.offsetHeight + 40}px; left: ${this.el.offsetLeft}px;"
 
