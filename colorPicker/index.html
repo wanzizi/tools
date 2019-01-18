@@ -11,6 +11,13 @@
 				height: 256px;
 				cursor: pointer;
 			}
+			.mask{
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+			}
 			.main-slider{
 				position: absolute;
 				top: 10px;
@@ -53,7 +60,9 @@
 		<div id="">
 			<div class="color-main" id="J_color_main">
 				<img src="img/bgGradient.png"/>
-				<span class="main-slider" id="J_main_slider"></span>
+				<div class="mask" id="J_color_main_mask">
+					<span class="main-slider" id="J_main_slider"></span>
+				</div>
 			</div>
 			<div class="color-hue" id="J_hue_bar">
 				<span class="hue-slider" id="J_hue_slider"></span>

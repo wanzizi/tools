@@ -128,21 +128,23 @@ Color.prototype.getHeight = function(top){
 //colormain鼠标事件
 Color.prototype.moveMainSlider = function(){
 	var isDrug = false
-	var startY = 0
+	var startX = 0,startY = 0
 	var _this = this
+
 	document.querySelector('#J_color_main').onclick = function(ev){
-//		根据是否有移动来区分点击事件和拖拽事件
-		if(ev.offsetY===startY){			
+		//		根据是否有移动来区分点击事件和拖拽事件
+		if(ev.offsetY===startY && ev.offsetX ===startX){			
 			_this.getMainPosition(ev)
 		}
 	}
 	
 	document.querySelector('#J_color_main').onmousedown = function(ev){
+		startX = ev.offsetX
 		startY = ev.offsetY
 		isDrug=true
 	}
 	document.querySelector('#J_color_main').onmousemove = function(ev){
-		if(isDrug && ev.target.id==='J_color_main'){	
+		if(isDrug && (ev.target.id==='J_color_main'||ev.target.id==='J_color_main_mask')){	
 			_this.getMainPosition(ev)
 		}
 	}
