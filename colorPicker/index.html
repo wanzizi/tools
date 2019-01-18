@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.color-main{
+				position: relative;
+				display: inline-block;
+				width: 256px;
+				height: 256px;
+				cursor: pointer;
+			}
+			.main-slider{
+				position: absolute;
+				top: 10px;
+				left: 100px;
+				width: 11px;
+				height: 11px;
+				background: url(img/circle-selected-black.gif);
+				cursor: pointer;
+			}
+			.color-hue{
+				position: relative;
+				display: inline-block;
+				width: 20px;
+				height: 256px;
+				background: url(img/hueBar.png);
+				margin-left: 5px;		
+				cursor: pointer;	
+			}
+			.hue-slider{
+				position: absolute;
+				top: 0;
+				left: -3px;
+				width: 22px;
+				height: 10px;
+				border-radius: 3px;
+				border: 2px solid #a09b9b;	
+				cursor: pointer;
+				transition: all 0.1s linear;
+			}
+			.display-block{
+				display: inline-block;
+				width: 100px;
+				height: 100px;
+				border: 1px solid #333;
+				margin-left: 5px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="">
+			<div class="color-main" id="J_color_main">
+				<img src="img/bgGradient.png"/>
+				<span class="main-slider" id="J_main_slider"></span>
+			</div>
+			<div class="color-hue" id="J_hue_bar">
+				<span class="hue-slider" id="J_hue_slider"></span>
+			</div>
+			<span class="display-block" id="J_display_block"></span>
+		</div>
+		<form>
+			<p>H: <input type="" name="" id="J_hsv_h" value="" /></p>
+			<p>S: <input type="" name="" id="J_hsv_s" value="" /></p>
+			<p>V: <input type="" name="" id="J_hsv_v" value="" /></p>
+			<p>R: <input type="" name="" id="J_rgb_r" value="" /></p>
+			<p>G: <input type="" name="" id="J_rgb_g" value="" /></p>
+			<p>B: <input type="" name="" id="J_rgb_b" value="" /></p>
+		</form>
+	</body>
+	<script src="color.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		var color = new Color({
+			height: 256,
+			getHSV:function(hsvObj){
+				document.querySelector('#J_hsv_h').value = hsvObj.h
+				document.querySelector('#J_hsv_s').value = hsvObj.s
+				document.querySelector('#J_hsv_v').value = hsvObj.v
+			},
+			getRGB:function(rgbObj){
+				document.querySelector('#J_rgb_r').value = rgbObj.r
+				document.querySelector('#J_rgb_g').value = rgbObj.g
+				document.querySelector('#J_rgb_b').value = rgbObj.b
+				
+				document.querySelector('#J_display_block').style.backgroundColor = 'rgb('+rgbObj.r+','+rgbObj.g+','+rgbObj.b+')'
+			}
+		})
+	</script>
+</html>
